@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <title>todesktop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      body {
+        font-family: "Baloo Bhai 2", sans-serif;
+      }
+      /* .material-symbols-outlined {
+        font-size: 30px;
+        font-family: "Material Symbols Outlined";
+      } */
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-100 via-orange-50 to-transparent h-[100vh]"
+  >
+    <!-- Nav Bar -->
+    <nav
+      class="px-4 box-border gap-5 flex bg-white justify-between items-center shadow-md w-full z-10 sticky top-0"
+    >
+      <a href="#" id="brand" class="items-center flex justify-center">
+        <img src="/images/logo main.png" alt="logo" class="max-w-[60px]" />
+        <span class="text-lg font-medium capitalize">todesktop</span>
+      </a>
+      <section
+        id="nav_items"
+        class="hidden flex-row gap-[50px] font-medium text-[16px] capitalize lg:flex"
+      >
+        <a href="#" class="hover:text-amber-400">pricing</a>
+        <a href="#" class="hover:text-amber-400">docs</a>
+        <a href="#" class="hover:text-amber-400">changelog</a>
+        <a href="#" class="hover:text-amber-400">blogs</a>
+        <a href="#" class="hover:text-amber-400">login</a>
+      </section>
+      <button
+        class="hidden px-4 py-1.5 capitalize text-center border lg:flex rounded-[5px] font-medium cursor-pointer gap-2 hover:bg-amber-600 items-center hover:border-amber-600 hover:text-white box-border hover:rounded-none"
+      >
+        electron developer
+        <span class="material-symbols-outlined">
+          keyboard_double_arrow_right
+        </span>
+      </button>
+      <div class="gap-[60px] lg:hidden flex items-center justify-center">
+        <div
+          class="drop_down flex menu_icon transition-all duration-300 ease-in-out cursor-pointer"
+        >
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+        <div
+          class="cross_icon transition-all duration-300 ease-in-out cursor-pointer hidden"
+        >
+          <span class="material-symbols-outlined"> close </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Overlay section -->
+    <div
+      class="fixed bg-amber-100 w-full h-full invisible opacity-0 transition-all duration-400 ease-in-out flex-col gap-5 lg:hidden"
+    >
+      <div class="m-auto justify-center items-center my-2">
+        <a href="#" class="hover:bg-gray-50 capitalize block p-4 px-5"
+          >pricing</a
+        >
+        <a href="#" class="hover:bg-gray-50 capitalize block p-4 px-5">docs</a>
+        <a href="#" class="hover:bg-gray-50 capitalize block p-4 px-5"
+          >changelog</a
+        >
+        <a href="#" class="hover:bg-gray-50 capitalize block p-4 px-5">blogs</a>
+        <a href="#" class="hover:bg-gray-50 capitalize block p-4 px-5">login</a>
+      </div>
+      <div class="border-b-amber-50 border-[1px]"></div>
+    </div>
+    <main>
+      <!-- hero section -->
+      <section
+        id="hero_section"
+        class="flex h-full w-full p-10 items-center flex-col gap-6 lg:w-[60vw] m-auto"
+      >
+        <article
+          id="error_display"
+          class="flex flex-row shadow w-fit items-center gap-1 font-medium bg-yellow-100 px-3 py-1 rounded-[5px] hover:shadow-md hover:cursor-pointer transition duration-300 hover:translate-y-[-4px] hover:rounded-none"
+        >
+          <div
+            class="circle border-yellow-600 w-[7px] h-[7px] rounded-lg border-2 bg-amber-400"
+          ></div>
+          <div class="version text-yellow-600">v0.21.1 :</div>
+          <div class="emet capitalize text-yellow-800">
+            find-in-page bug fixes
+          </div>
+          <div class="right_arrow flex text-yellow-600">
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </div>
+        </article>
+        <article
+          class="flex-row items-center justify-between w-full lg:flex hidden"
+        >
+          <div class="flex flex-row items-center gap-1">
+            <span class="material-symbols-outlined"> code_blocks </span>
+            <div class="text capitalize font-medium">web-development</div>
+          </div>
+          <div class="flex flex-row items-center gap-1">
+            <span class="material-symbols-outlined"> code_blocks </span>
+            <div class="text uppercase font-medium">html</div>
+          </div>
+          <div class="flex flex-row items-center gap-1">
+            <span class="material-symbols-outlined text-5xl">
+              code_blocks
+            </span>
+            <div class="text capitalize font-medium">java-Script</div>
+          </div>
+        </article>
+        <article class="flex flex-col gap-4 items-center">
+          <div
+            class="mainText capitalize text-6xl font-bold leading-tight text-center flex flex-col items-center m-auto"
+          >
+            web app to desktop app in minutes
+          </div>
+          <div class="title_base_text text-center text-lg font-medium">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            blanditiis corrupti recusandae quaerat provident ipsum! Aliquam,
+            fugit itaque! Ipsum necessitatibus praesentium, iure iusto nam nisi
+            nemo nobis aperiam voluptates mollitia!
+          </div>
+        </article>
+        <article class="flex flex-col lg:flex-row w-full gap-5">
+          <button
+            class="capitalize bg-yellow-200 shadow font-bold w-full text-xl py-2 rounded-[5px] cursor-pointer hover:shadow-md hover:bg-amber-600 transition duration-300 text-yellow-800 hover:rounded-none hover:text-white"
+          >
+            downlaod now
+          </button>
+          <button
+            class="capitalize border-yellow-100 border bg-yellow-100 shadow font-bold w-full text-xl py-2 rounded-[5px] cursor-pointer hover:shadow-md hover:bg-amber-600 hover:border-amber-600 hover:rounded-none transition duration-300 text-yellow-800 lg:justify-between hover:text-white"
+          >
+            read docx
+          </button>
+        </article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        laudantium quos dignissimos doloremque, sint error earum corrupti ea
+        distinctio laboriosam esse incidunt ullam optio animi, aut sit sunt
+        perspiciatis, minus nemo tempora suscipit deserunt obcaecati architecto!
+        Earum voluptas cupiditate, quisquam praesentium maxime amet eaque iusto
+        perferendis fugit beatae? Rerum eius deleniti doloremque atque unde
+        aperiam, illo nostrum aut minima neque exercitationem cum, illum ducimus
+        vel eligendi assumenda? Maxime quod nesciunt et distinctio, consectetur
+        cupiditate recusandae, tempora officiis dolor iusto dolorem, facere
+        voluptatem ducimus debitis ipsum. Maxime quisquam excepturi, consectetur
+        laboriosam natus enim facere recusandae. Magnam, quod! Nesciunt, aut!
+        Optio, ducimus.
+      </section>
+    </main>
+  </body>
+  <script src="/src/script.js"></script>
+</html>
